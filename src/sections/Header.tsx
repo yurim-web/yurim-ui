@@ -24,7 +24,7 @@ const Header = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             style={{ cursor: 'pointer' }}
           >
-            YURIM'S WEB PORTFOLIO
+            YURIM'S PUBLISHER PORTFOLIO
           </h1>
         </div>
         <div className="nav_right">

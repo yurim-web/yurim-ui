@@ -1,11 +1,11 @@
-# 🗂️ yurim — 개인 포트폴리오 웹사이트
+# 🗂️ yurim — 웹 퍼블리셔 포트폴리오 웹사이트
 
-프론트엔드 개발자 이유림의 개인 포트폴리오 사이트입니다.
+웹 디자이너 & 퍼블리셔 이유림의 포트폴리오 사이트입니다.
 실무 프로젝트·학습 프로젝트·디자인 작업물을 한눈에 확인할 수 있습니다.
 
 ![Status](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue?logo=typescript) ![GSAP](https://img.shields.io/badge/GSAP-3.13.0-green?logo=greensock)
 
-🔗 **배포 URL** : https://yurim-web.github.io
+🔗 **배포 URL** : https://yurim-web.github.io/yurim-ui
 
 ---
 
@@ -52,7 +52,7 @@
 - 배경 블러 오브젝트 float 애니메이션
 
 ### 👋 About
-- 자기소개 텍스트 (프론트엔드 개발자 포지션)
+- 자기소개 텍스트 (웹 퍼블리셔 포지션)
 - 이력 타임라인 (경력 · 교육 · 자격증)
 
 ### 🎯 Strength
@@ -112,8 +112,8 @@ src/
 
 ```bash
 # 저장소 클론
-git clone https://github.com/yurim-web/yurim.dev.git
-cd yurim.dev
+git clone https://github.com/yurim-web/yurim-ui.git
+cd yurim-ui
 
 # 패키지 설치
 npm install

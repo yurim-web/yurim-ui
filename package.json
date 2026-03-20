@@ -1,8 +1,8 @@
 {
-  "name": "frontend-portfolio",
+  "name": "publisher-portfolio",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://yurim-web.github.io",
+  "homepage": "https://yurim-web.github.io/yurim-ui",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
@@ -27,7 +27,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b main -r https://github.com/yurim-web/yurim-web.github.io.git",
+    "deploy": "gh-pages -d build -b gh-pages -r https://github.com/yurim-web/yurim-ui.git",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "lint": "eslint src/ --ext .ts,.tsx --max-warnings 0",
     "lint:fix": "eslint src/ --ext .ts,.tsx --fix",

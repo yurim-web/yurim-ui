@@ -31,37 +31,37 @@ export const skillList: SkillItem[] = [
   {
     name: 'HTML',
     description:
-      '시맨틱 마크업과 웹 표준·접근성을 준수한 HTML 구조를 설계합니다. 다양한 디바이스 환경을 고려한 견고한 마크업을 빠르게 작성합니다.',
+      '시맨틱 마크업과 웹 표준·접근성을 준수한 HTML 구조를 설계합니다. 다양한 디바이스와 브라우저 환경을 고려한 크로스 브라우징 대응이 가능하며, 견고한 마크업을 빠르게 작성합니다.',
     img: htmlImg,
   },
   {
     name: 'CSS',
     description:
-      'Flexbox, Grid를 활용한 복잡한 레이아웃과 애니메이션을 구현합니다. 디자인 시안을 픽셀 단위로 재현하며 JavaScript 인터랙션과 결합한 동적 UI 표현에 강점이 있습니다.',
+      'Flexbox, Grid를 활용한 복잡한 레이아웃과 반응형 디자인을 구현합니다. 디자인 시안을 픽셀 단위로 정확하게 재현하며, 미디어 쿼리를 활용한 모바일·태블릿·데스크톱 대응에 강점이 있습니다.',
     img: cssImg,
   },
   {
     name: 'Javascript',
     description:
-      'DOM 제어와 이벤트 처리를 기반으로 슬라이드, 메뉴, 스크롤 인터랙션 등 실무 수준의 동적 기능을 구현합니다.',
+      'DOM 제어와 이벤트 처리를 기반으로 슬라이드, 탭 메뉴, 스크롤 인터랙션 등 실무 수준의 동적 UI 기능을 구현합니다.',
     img: javascriptImg,
   },
   {
     name: 'TypeScript',
     description:
-      '인터페이스와 타입 정의로 코드 안정성을 높이고, 런타임 오류를 사전에 방지하는 타입 안전한 개발을 실무에서 적용하고 있습니다.',
+      '타입 정의를 활용해 안정적인 코드를 작성하며, 기본적인 TypeScript 문법을 이해하고 프로젝트에 적용한 경험이 있습니다.',
     img: typescriptImg,
   },
   {
     name: 'React',
     description:
-      '컴포넌트 기반으로 UI를 구조화하고, useState·useEffect·useRef 등 기본 훅을 활용해 상태 관리와 사이드 이펙트를 처리합니다.',
+      '컴포넌트 기반 UI 구조를 이해하고 있으며, 개인 프로젝트에서 React를 활용한 퍼블리싱 경험이 있습니다.',
     img: reactImg,
   },
   {
     name: 'Next.js',
     description:
-      'Next.js를 활용해 페이지 라우팅과 기본적인 프로젝트 구조를 설계할 수 있으며, 꾸준히 학습을 이어가고 있습니다.',
+      'Next.js의 기본적인 페이지 라우팅과 프로젝트 구조를 이해하고 있으며, 꾸준히 학습을 이어가고 있습니다.',
     img: nextImg,
   },
   {
@@ -102,7 +102,8 @@ export const skillList: SkillItem[] = [
   },
   {
     name: 'Figma',
-    description: '기본적인 화면 설계와 간단한 UI 디자인 작업이 가능하며, 꾸준히 학습하고 있습니다.',
+    description:
+      '화면 설계와 UI 디자인 작업이 가능하며, 디자이너와 Figma를 통해 시안을 직접 확인하고 에셋을 추출하는 협업 워크플로우에 익숙합니다.',
     img: figmaImg,
   },
   {
