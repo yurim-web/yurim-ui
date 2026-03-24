@@ -1,0 +1,679 @@
+/* 경력기술서 페이지 스타일 */
+
+/* 페이지 전체 */
+.resume_page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #333333;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+[data-theme='dark'] .resume_page {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* 상단 네비게이션 */
+.resume_header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+[data-theme='dark'] .resume_header {
+  background-color: rgba(26, 26, 26, 0.95);
+  border-bottom-color: #333;
+}
+
+.resume_nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume_back_link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resume_back_link:hover {
+  color: #e88a8a;
+}
+
+[data-theme='dark'] .resume_back_link {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .resume_back_link:hover {
+  color: #f5a5a5;
+}
+
+.resume_nav_title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+[data-theme='dark'] .resume_nav_title {
+  color: #666;
+}
+
+/* 메인 콘텐츠 */
+.resume_main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+}
+
+/* 타이틀 */
+.resume_title_section {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #333;
+  transition: border-color 0.3s ease;
+}
+
+[data-theme='dark'] .resume_title_section {
+  border-bottom-color: #e0e0e0;
+}
+
+.resume_name {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: 2px;
+}
+
+.resume_position {
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+[data-theme='dark'] .resume_position {
+  color: #aaa;
+}
+
+/* 섹션 공통 */
+.resume_section {
+  margin-bottom: 48px;
+}
+
+.resume_section_title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  letter-spacing: 0.5px;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+[data-theme='dark'] .resume_section_title {
+  border-bottom-color: #333;
+  color: #e0e0e0;
+}
+
+/* Contact */
+.resume_contact_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 40px;
+}
+
+.resume_contact_list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume_contact_label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #999;
+  min-width: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+[data-theme='dark'] .resume_contact_label {
+  color: #777;
+}
+
+.resume_contact_value {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.resume_contact_value:hover {
+  color: #e88a8a;
+}
+
+[data-theme='dark'] .resume_contact_value {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] a.resume_contact_value:hover {
+  color: #f5a5a5;
+}
+
+/* About */
+.resume_about_text p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.resume_about_text p:last-child {
+  margin-bottom: 0;
+}
+
+[data-theme='dark'] .resume_about_text p {
+  color: #bbb;
+}
+
+/* Skills */
+.resume_skills_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.resume_skill_category {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .resume_skill_category {
+  background-color: #242424;
+}
+
+.resume_skill_category_title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e88a8a;
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
+}
+
+[data-theme='dark'] .resume_skill_category_title {
+  color: #f5a5a5;
+}
+
+.resume_skill_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume_skill_list li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  padding: 2px 0;
+}
+
+[data-theme='dark'] .resume_skill_list li {
+  color: #bbb;
+}
+
+/* Work Experience */
+.resume_experience {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: border-color 0.3s ease;
+}
+
+.resume_experience:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+[data-theme='dark'] .resume_experience {
+  border-bottom-color: #2a2a2a;
+}
+
+.resume_experience_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.resume_experience_info {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.resume_company_name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.resume_role {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e88a8a;
+}
+
+[data-theme='dark'] .resume_role {
+  color: #f5a5a5;
+}
+
+.resume_period {
+  font-size: 13px;
+  color: #999;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .resume_period {
+  color: #777;
+}
+
+.resume_experience_summary {
+  font-size: 14px;
+  color: #777;
+  margin: 0 0 24px;
+  padding-left: 2px;
+}
+
+[data-theme='dark'] .resume_experience_summary {
+  color: #999;
+}
+
+/* 프로젝트 */
+.resume_project {
+  margin-bottom: 24px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #e88a8a;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.resume_project:last-child {
+  margin-bottom: 0;
+}
+
+[data-theme='dark'] .resume_project {
+  background-color: #242424;
+  border-left-color: #f5a5a5;
+}
+
+.resume_project_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.resume_project_name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.resume_contribution {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #e88a8a;
+  padding: 3px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .resume_contribution {
+  background-color: #c06a6a;
+}
+
+/* 프로젝트 링크 */
+.resume_project_links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.resume_project_links a {
+  font-size: 13px;
+  color: #e88a8a;
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 1px solid #e88a8a;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.resume_project_links a:hover {
+  background-color: #e88a8a;
+  color: #fff;
+}
+
+[data-theme='dark'] .resume_project_links a {
+  color: #f5a5a5;
+  border-color: #f5a5a5;
+}
+
+[data-theme='dark'] .resume_project_links a:hover {
+  background-color: #f5a5a5;
+  color: #1a1a1a;
+}
+
+/* 담당업무 / 성과 */
+.resume_project_detail {
+  margin-bottom: 12px;
+}
+
+.resume_project_detail:last-child {
+  margin-bottom: 0;
+}
+
+.resume_detail_title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #999;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+[data-theme='dark'] .resume_detail_title {
+  color: #777;
+}
+
+.resume_detail_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume_detail_list li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  padding: 2px 0;
+  padding-left: 14px;
+  position: relative;
+}
+
+.resume_detail_list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #e88a8a;
+}
+
+[data-theme='dark'] .resume_detail_list li {
+  color: #bbb;
+}
+
+[data-theme='dark'] .resume_detail_list li::before {
+  color: #f5a5a5;
+}
+
+/* 핵심 성과 */
+.resume_achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume_achievements li {
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 8px 0 8px 20px;
+  position: relative;
+  color: #444;
+  border-bottom: 1px solid #f5f5f5;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.resume_achievements li:last-child {
+  border-bottom: none;
+}
+
+.resume_achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #e88a8a;
+}
+
+[data-theme='dark'] .resume_achievements li {
+  color: #bbb;
+  border-bottom-color: #2a2a2a;
+}
+
+[data-theme='dark'] .resume_achievements li::before {
+  color: #f5a5a5;
+}
+
+/* Education */
+.resume_education_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume_education_list li {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+  transition: border-color 0.3s ease;
+}
+
+.resume_education_list li:last-child {
+  border-bottom: none;
+}
+
+[data-theme='dark'] .resume_education_list li {
+  border-bottom-color: #2a2a2a;
+}
+
+.resume_edu_period {
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+  min-width: 130px;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .resume_edu_period {
+  color: #777;
+}
+
+.resume_edu_content {
+  font-size: 14px;
+  color: #555;
+}
+
+[data-theme='dark'] .resume_edu_content {
+  color: #bbb;
+}
+
+/* 하단 포트폴리오 링크 */
+.resume_footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.resume_portfolio_link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #333;
+  padding: 14px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.resume_portfolio_link:hover {
+  background-color: #e88a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(232, 138, 138, 0.3);
+}
+
+[data-theme='dark'] .resume_portfolio_link {
+  background-color: #e0e0e0;
+  color: #1a1a1a;
+}
+
+[data-theme='dark'] .resume_portfolio_link:hover {
+  background-color: #f5a5a5;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .resume_main {
+    padding: 40px 24px 80px;
+  }
+
+  .resume_nav {
+    padding: 14px 24px;
+  }
+
+  .resume_name {
+    font-size: 28px;
+  }
+
+  .resume_contact_list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .resume_skills_grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .resume_experience_header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .resume_experience_info {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .resume_project_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .resume_project_links {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .resume_education_list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .resume_edu_period {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume_main {
+    padding: 30px 16px 60px;
+  }
+
+  .resume_nav {
+    padding: 12px 16px;
+  }
+
+  .resume_name {
+    font-size: 24px;
+  }
+
+  .resume_section_title {
+    font-size: 18px;
+  }
+
+  .resume_project {
+    padding: 16px;
+  }
+
+  .resume_skill_category {
+    padding: 16px;
+  }
+}
+
+/* 프린트 스타일 */
+@media print {
+  .resume_header {
+    display: none;
+  }
+
+  .resume_page {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .resume_main {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .resume_project {
+    break-inside: avoid;
+  }
+
+  .resume_experience {
+    break-inside: avoid;
+  }
+
+  .resume_portfolio_link {
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #333;
+  }
+}

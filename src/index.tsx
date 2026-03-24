@@ -9,6 +9,7 @@ import './styles/info_section.css';
 import './styles/skills.css';
 import './styles/project.css';
 import './styles/portfolio.css';
+import './styles/resume.css';
 
 import App from './App';
 

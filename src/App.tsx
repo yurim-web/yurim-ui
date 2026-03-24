@@ -1,16 +1,18 @@
 /**
  * 포트폴리오 루트 컴포넌트
  *
- * 각 섹션은 id를 가지며, 앵커 내비게이션(#about, #strength 등)으로 이동합니다.
- * ThemeProvider(다크모드)와 SectionProvider(섹션 추적)가 전체를 감쌉니다.
- * ResumeToggle(도트 네비게이터)과 ThemeToggle(다크모드 스위치)은 화면에 고정 표시됩니다.
+ * HashRouter를 사용하여 메인 포트폴리오와 경력기술서 페이지를 라우팅합니다.
+ * - / : 포트폴리오 메인
+ * - /resume : 경력기술서
  */
 import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import ResumeToggle from './common/button/ResumeToggle';
 import ThemeToggle from './common/button/ThemeToggle';
 import { SectionProvider } from './contexts/SectionContext';
 import { ThemeProvider } from './contexts/ThemeContext';
+import Resume from './pages/Resume';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import Header from './sections/Header';
@@ -21,7 +23,7 @@ import Project from './sections/Project';
 import Skills from './sections/Skills';
 import WebDesign from './sections/WebDesign';
 
-function App() {
+const PortfolioPage = () => {
   return (
     <ThemeProvider>
       <SectionProvider>
@@ -54,6 +56,17 @@ function App() {
         </div>
       </SectionProvider>
     </ThemeProvider>
+  );
+};
+
+function App() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<PortfolioPage />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
